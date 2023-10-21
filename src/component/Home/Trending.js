@@ -7,8 +7,8 @@ import trendings4 from "../Images/trendings4.png";
 
 const Trending = () => {
     return (
-        <div>
-<div className="carousel w-full">
+        <div className='mb-14 max-w-[1440px] mx-auto'>
+<div className="carousel w-full ">
 
   <div id="item1" className="carousel-item w-1/3 mr-3">
     <img src={trendings1} className="w-full"></img>
