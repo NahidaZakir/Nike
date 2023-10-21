@@ -22,16 +22,16 @@ const Links = () => {
         
         <div className="dropdown dropdown-hover dropdown-bottom dropdown-end ">
                 <label tabIndex={0} className="m-1 bg-inherit"><Link className='font-bold text-xs hover:text-gray-500 lowercase'>&nbsp;&nbsp;&nbsp;&nbsp; Help &nbsp;&nbsp;&nbsp;&nbsp;|</Link></label>
-                <ul tabIndex={0} className="dropdown-content z-[2]  text-justify p-2 rounded-box w-60">
+                <ul tabIndex={0} className="dropdown-content bg-white z-[2]  text-justify p-2 rounded-box w-60">
                     <li className='mb-5 mt-5' ><Link className='text-left font-bold text-black ml-5 '>Help</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Status</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Shipping and Delivery</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Returns</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Cancellation</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Size Charts</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Privacy Policy</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Sale</Link></li>
-                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Use</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Status</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Shipping and Delivery</Link></li>
+                    <li  className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Returns</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Cancellation</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Size Charts</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Privacy Policy</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Sale</Link></li>
+                    <li className='mb-2'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Use</Link></li>
                     <li className='mb-5'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Send us Feedback</Link></li>
                 </ul>
         </div>
