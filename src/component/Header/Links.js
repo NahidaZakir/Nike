@@ -6,7 +6,7 @@ const Links = () => {
         <div className='bg-base-200 h-12 mt-0'>
 
 
-<div className="navbar max-w-[1440px] mx-auto -mt-3 ">
+<div className="navbar max-w-[1440px] mx-auto -mt-3 mb-1 ">
   <div className="navbar-start">
   <img src={jump} className='w-6 h-6'></img>
   </div>
@@ -16,12 +16,30 @@ const Links = () => {
   <div className="navbar-end">
   <div className="navbar-center hidden lg:flex">
     <div>
-    <Link className='font-bold text-xs'>Nike Refurbished&nbsp;&nbsp;&nbsp;&nbsp;|</Link>
+    <Link className='font-bold text-xs hover:text-gray-500'>Nike Refurbished&nbsp;&nbsp;&nbsp;&nbsp;|</Link>
 
-        <Link className='font-bold text-xs'>&nbsp;&nbsp;&nbsp;&nbsp;Find a Store&nbsp;&nbsp;&nbsp;&nbsp;|</Link>
-        <Link className='font-bold text-xs'>&nbsp;&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;&nbsp;|</Link>
-        <Link className='font-bold text-xs'>&nbsp;&nbsp;&nbsp;&nbsp;Join Us&nbsp;&nbsp;&nbsp;&nbsp;        |</Link>
-        <Link className='font-bold text-xs'>&nbsp;&nbsp;&nbsp;&nbsp;Sign in&nbsp;&nbsp;&nbsp;&nbsp;    </Link>
+        <Link className='font-bold text-xs hover:text-gray-500'>&nbsp;&nbsp;&nbsp;&nbsp;Find a Store&nbsp;&nbsp;&nbsp;&nbsp;|</Link>
+        
+        <div className="dropdown dropdown-hover dropdown-bottom dropdown-end ">
+                <label tabIndex={0} className="m-1 bg-inherit"><Link className='font-bold text-xs hover:text-gray-500 lowercase'>&nbsp;&nbsp;&nbsp;&nbsp; Help &nbsp;&nbsp;&nbsp;&nbsp;|</Link></label>
+                <ul tabIndex={0} className="dropdown-content z-[2]  text-justify p-2 rounded-box w-60">
+                    <li className='mb-5 mt-5' ><Link className='text-left font-bold text-black ml-5 '>Help</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Status</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Shipping and Delivery</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Returns</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Order Cancellation</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Size Charts</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Privacy Policy</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Sale</Link></li>
+                    <li className='mb-1'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Terms of Use</Link></li>
+                    <li className='mb-5'><Link className='font-medium text-gray-500 hover:text-black ml-5'>Send us Feedback</Link></li>
+                </ul>
+        </div>
+
+
+
+        <Link className='font-bold text-xs hover:text-gray-500'>&nbsp;&nbsp;&nbsp;&nbsp;Join Us&nbsp;&nbsp;&nbsp;&nbsp;        |</Link>
+        <Link className='font-bold text-xs hover:text-gray-500'>&nbsp;&nbsp;&nbsp;&nbsp;Sign in&nbsp;&nbsp;&nbsp;&nbsp;    </Link>
     </div>
   </div>
   <div className='lg:hidden flex '>
@@ -43,13 +61,17 @@ const Links = () => {
 
 
   </div>
-  <div className="dropdown">
+  <div className="dropdown lg:hidden">
     <div>
-    <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 20 20" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-100 rounded-box w-52">
-       </ul>
+            <div className="dropdown dropdown-bottom dropdown-end">
+                <label tabIndex={0} className="btn btn-xs m-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabIndex={0} className="dropdown-content  z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                </ul>
+            </div>
     </div>
 
     </div>

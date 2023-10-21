@@ -13,7 +13,7 @@ import Footer from './Footer/Footer';
 
 const Homepage = () => {
     return (
-        <div>
+        <div >
             <Homecarousel></Homecarousel>
             <Banner></Banner>
             <Newarrivals></Newarrivals>
