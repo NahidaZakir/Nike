@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Menu from './Menu';
+import Links from './Links';
 
 
 
 const Header = () => {
     return (
         <div>
-          <Navbar></Navbar>
+          <Links></Links>
           <Menu></Menu>
         </div>
     );
