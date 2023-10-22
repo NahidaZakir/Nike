@@ -16,9 +16,13 @@ function SampleNextArrow(props) {
     return (
         <div
         className="slick-next"
-        style={{ ...style, display: "block" ,margin:"-180px 0px 0px 0px"}}
+        style={{ }}
         onClick={onClick}
       >
+        <button className='btn btn-circle'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+</button>
 
       </div>
 
@@ -30,8 +34,15 @@ function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block",margin:"-180px 0px 0px 0px" }}
+        style={{  }}
         onClick={onClick}>
+            <button className='btn btn-circle'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+  
+</svg>
+</button>
+
         </div>
     
     );

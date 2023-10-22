@@ -3,19 +3,49 @@
   }
   .slick-list {
     margin: 0 -10px;
+position: relative;
+  }
+
+  
+   .slick-prev:before, .slick-next:before  {
+    content: '' !important;
   }
   .slick-prev {
     left: 100px;
-    background:black; /*to notice it, is white*/
+    color:white;
+    font-size: 15px !important;
     z-index: 1;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20%;
+    right: 90%;
 
   }
-  .slick-prev:hover, .slick-next:hover{
-    background-color:black;
+ .slick-next:hover{
+
+    color:white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20%;
+    left: 90%;
 
   }
   .slick-next {
+    position: absolute;
+    top: 20%;
+    left: 90%;
     right: 100px;
-    background:black; /*to notice it, is white*/
-    
+    font-size: 15px !important;
+    width: 10px;
+    height: 10px;
+  }
+  .slick-prev:hover{
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20%;
+    right: 90%;
   }
