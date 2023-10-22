@@ -10,7 +10,7 @@ import iconic8 from "../Images/iconic/iconic8.png";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import "../Home/iconic.css";
+import '../Home/iconic.css';
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -33,7 +33,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className="slick-prev"
         style={{  }}
         onClick={onClick}>
             <button className='btn btn-circle'>
@@ -49,9 +49,6 @@ function SampleNextArrow(props) {
   }
 
 const Iconic = () => {
-
-
-
         const settings = {
           dots: false,
           infinite: true,
@@ -63,10 +60,10 @@ const Iconic = () => {
           prevArrow: <SamplePrevArrow />
         }
     return (
-        <div className='max-w-[1440px] mx-auto'>
+        <div className='max-w-[1440px] mx-auto  h-96'>
         <h2 className='mt-10 mb-10 text-left pl-10 text-2xl font-medium'>Always Iconic</h2>
         <Slider {...settings}>
-          <div className='mr-3 w-1/3 h-1/3'>
+          <div className='mr-3 '>
             <img src={iconic1} ></img>
           </div>
           <div>

@@ -7,45 +7,45 @@ position: relative;
   }
 
   
-   .slick-prev:before, .slick-next:before  {
+   .slick-prev2:before, .slick-next2:before  {
     content: '' !important;
   }
-  .slick-prev {
-    left: 100px;
+  .slick-prev2 {
     color:white;
     font-size: 15px !important;
     z-index: 1;
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 20%;
-    right: 90%;
+    top: -5%;
+    left:86%;
 
   }
- .slick-next:hover{
-  position: absolute;
+  .slick-prev2:hover{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5%;
+    right: 86%;
+
+  }
+ .slick-next2:hover{
+
     color:white;
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 20%;
+    top: -5%;
     left: 90%;
-
   }
-  .slick-next {
+  .slick-next2 {
     position: absolute;
-    top: 20%;
+    top: -5%;
     left: 90%;
     right: 100px;
     font-size: 15px !important;
     width: 10px;
     height: 10px;
+
   }
-  .slick-prev:hover{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 20%;
-    right: 90%;
-  }
+ 
