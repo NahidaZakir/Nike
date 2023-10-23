@@ -6,10 +6,11 @@ import Trending from './Trending';
 import Featured from './Featured';
 import Iconic from './Iconic';
 import Shopbysport from '../Sport/Shopbysport';
-import Newfallstyles from './Newfallstyles';
+
 import Nikemembership from './Nikemembership';
 import Linksend from './Linksend';
 import Footer from './Footer/Footer';
+import Fallstyles from './fallstyles/Fallstyles';
 
 const Homepage = () => {
     return (
@@ -22,7 +23,7 @@ const Homepage = () => {
             <Featured></Featured>
             <Iconic></Iconic>
             <Shopbysport></Shopbysport>
-            <Newfallstyles></Newfallstyles>
+           <Fallstyles></Fallstyles>
             <Nikemembership></Nikemembership>
             <Linksend></Linksend>
             <Footer></Footer>

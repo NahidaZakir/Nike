@@ -1,14 +1,17 @@
-import React from 'react';
-import sport1 from "../Images/shopbysports/sport1.png";
-import sport2 from "../Images/shopbysports/sports2.png";
-import sport3 from "../Images/shopbysports/sports3.png";
-import sport4 from "../Images/shopbysports/sports4.png";
-import sport5 from "../Images/shopbysports/sports5.png";
-import sport6 from "../Images/shopbysports/sports6.png";
+import React, { useState } from 'react';
+import fall1 from "../../Images/fallstyles/fall1.png";
+import fall2 from "../../Images/fallstyles/fall2.png";
+import fall3 from "../../Images/fallstyles/fall3.png";
+import fall4 from "../../Images/fallstyles/fall4.png";
+import fall5 from "../../Images/fallstyles/fall5.png";
+import fall6 from "../../Images/fallstyles/fall6.png";
+import fall7 from "../../Images/fallstyles/fall7.png";
+import fall8 from "../../Images/fallstyles/fall8.png";
+import fall9 from "../../Images/fallstyles/fall9.png";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import "../Sport/Shopbysport.css";
+import "../fallstyles/Fallstyles.css";
 import { Link } from 'react-router-dom';
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -45,11 +48,24 @@ function SampleNextArrow(props) {
     );
   }
 
-const Shopbysport = () => {
+const Fallstyles = () => {
 
-    
+  const sports = [
+    {"id":1, "image":require("../../Images/fallstyles/fall1.png"), "title": "Nike Dunk Low Metro", "description": "Men's Shoes","price":"$115"},
+    {"id":2, "image":require("../../Images/fallstyles/fall2.png"), "title": "Bike Running", "description": "Everything you'll need for every mile."},
+    {"id":3, "image":require("../../Images/fallstyles/fall3.png"), "title": "Nike Golf", "description": "Conquer any course in style."},
+    {"id":4, "image":require("../../Images/fallstyles/fall4.png"), "title": "Nike Football", "description": "Command the field in game-ready gear."},
+    {"id":5, "image":require("../../Images/fallstyles/fall5.png"), "title": "Nike Baseball", "description": "Step up to the plate in style."},
+    {"id":6, "image":require("../../Images/fallstyles/fall6.png"), "title": "Nike Soccer", "description": "Bring mad style to the pitch with latest gear."},
+    {"id":7, "image":require("../../Images/fallstyles/fall7.png"), "title": "Nike Soccer", "description": "Bring mad style to the pitch with latest gear."},
+    {"id":8, "image":require("../../Images/fallstyles/fall8.png"), "title": "Nike Soccer", "description": "Bring mad style to the pitch with latest gear."},
+    {"id":9, "image":require("../../Images/fallstyles/fall9.png"), "title": "Nike Soccer", "description": "Bring mad style to the pitch with latest gear."},
+
+];
+
     const settings = {
-        infinite: true,
+        
+        infinite:true,
         speed: 200,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -60,23 +76,16 @@ const Shopbysport = () => {
       }
 
 
-    const sports = [
-           {"id":1, "image":require("../Images/shopbysports/sport1.png"), "title": "Nike Basketball", "description": "Styles made for your game."},
-           {"id":2, "image":require("../Images/shopbysports/sports2.png"), "title": "Bike Running", "description": "Everything you'll need for every mile."},
-           {"id":3, "image":require("../Images/shopbysports/sports3.png"), "title": "Nike Golf", "description": "Conquer any course in style."},
-           {"id":4, "image":require("../Images/shopbysports/sports4.png"), "title": "Nike Football", "description": "Command the field in game-ready gear."},
-           {"id":5, "image":require("../Images/shopbysports/sports5.png"), "title": "Nike Baseball", "description": "Step up to the plate in style."},
-           {"id":6, "image":require("../Images/shopbysports/sports6.png"), "title": "Nike Soccer", "description": "Bring mad style to the pitch with latest gear."},
 
-    ];
 
     return (
-        <div className=' max-w-[1440px] mx-auto  p-0 h-96'>
-           <h1 className='mt-24 mb-10 text-left pl-20 text-2xl font-medium'>Shop by Sport</h1>
+        <div className=' max-w-[1440px] mx-auto h-96'>
+           <h1 className='mt-56  mb-10 text-left pl-20 text-2xl font-medium'>New Fall Styles</h1>
            <Slider {...settings} className=' grid grid-cols-3 w-full gap-4 '>
                     {
                         sports.map((sport) => (<div className="card card-compact w-96 mt-2">
                         <figure><img src={sport.image} alt="Shoes" /></figure>
+                        
                         <div className="card-body">
                             <h2 className="card-title text-xl font-medium">{sport.title}</h2>
                             <p className='text-left'>{sport.description}</p>
@@ -96,4 +105,4 @@ const Shopbysport = () => {
     );
 };
 
-export default Shopbysport;
+export default Fallstyles;
